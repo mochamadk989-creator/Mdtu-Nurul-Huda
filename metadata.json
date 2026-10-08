@@ -1,0 +1,6 @@
+{
+  "name": "MDTU Nurul Huda - Sistem Terpadu Madrasah",
+  "description": "Sistem Informasi Terpadu MDTU Nurul Huda Cikopo Panawa: Presensi Santri TPQ & Kelas A/B/C, Absensi Guru, Kalender Hijriyah/Masehi, Cetak Laporan PDF Resmi, SPP & Kas, Al-Qur'an 30 Juz, Jadwal Sholat, dan Prestasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

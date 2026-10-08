@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "MDTU Nurul Huda - Sistem Terpadu Madrasah",
+  "short_name": "MDTU Huda",
+  "description": "Sistem Informasi Terpadu MDTU Nurul Huda Cikopo Panawa: Presensi Santri & Guru, Kalender Hijriyah, SPP, Al-Qur'an & Cetak Laporan PDF.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#04432f",
+  "theme_color": "#04432f",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

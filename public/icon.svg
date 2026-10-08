@@ -1,0 +1,209 @@
+<svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="emeraldBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#08523b" />
+      <stop offset="60%" stop-color="#04432f" />
+      <stop offset="100%" stop-color="#022c1e" />
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe27a" />
+      <stop offset="25%" stop-color="#f5b83d" />
+      <stop offset="50%" stop-color="#ffd868" />
+      <stop offset="75%" stop-color="#b37b19" />
+      <stop offset="100%" stop-color="#e5a82e" />
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff2a1" />
+      <stop offset="100%" stop-color="#c98a1a" />
+    </linearGradient>
+    <filter id="goldGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#000" floodOpacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Outer Pentagonal Shield Base -->
+  <path
+    d="M250,15 L465,145 L385,465 L115,465 L35,145 Z"
+    fill="url(#emeraldBg)"
+    stroke="url(#goldGradient)"
+    stroke-width="10"
+    stroke-linejoin="round"
+    filter="url(#goldGlow)"
+  />
+
+  <!-- Inner Gold Borders & Filigree Lines -->
+  <path
+    d="M250,32 L448,154 L374,448 L126,448 L52,154 Z"
+    fill="none"
+    stroke="url(#goldGradient)"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M250,45 L435,160 L365,435 L135,435 L65,160 Z"
+    fill="none"
+    stroke="url(#goldLight)"
+    stroke-width="1.5"
+    stroke-dasharray="4 3"
+  />
+
+  <!-- Corner Flourishes -->
+  <circle cx="250" cy="30" r="5" fill="url(#goldGradient)" />
+  <circle cx="450" cy="150" r="5" fill="url(#goldGradient)" />
+  <circle cx="375" cy="450" r="5" fill="url(#goldGradient)" />
+  <circle cx="125" cy="450" r="5" fill="url(#goldGradient)" />
+  <circle cx="50" cy="150" r="5" fill="url(#goldGradient)" />
+
+  <!-- Arabic Calligraphy Arc Header -->
+  <path id="arabicArc" d="M100,140 Q250,40 400,140" fill="none" />
+  <text fill="url(#goldLight)" font-size="20" font-weight="bold" font-family="'Amiri', 'Scheherazade New', serif" text-anchor="middle">
+    <textPath href="#arabicArc" startOffset="50%">
+      نُوْرُ الْهُدَى
+    </textPath>
+  </text>
+
+  <!-- Latin Institution Name Arc -->
+  <path id="latinArc" d="M110,240 Q250,90 390,240" fill="none" />
+  <text fill="url(#goldLight)" font-size="11" font-weight="900" letter-spacing="2.5" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="middle">
+    <textPath href="#latinArc" startOffset="50%">
+      MADRASAH DINIYAH TAKMILIYAH ULA NURUL HUDA
+    </textPath>
+  </text>
+
+  <!-- Golden Crescent Moon and Stars -->
+  <g transform="translate(250, 175) scale(0.9)">
+    <path
+      d="M0,-24 A15,15 0 0,0 12,0 A17,17 0 1,1 0,-24 Z"
+      fill="url(#goldGradient)"
+      transform="rotate(-20)"
+    />
+    <!-- Stars -->
+    <polygon points="0,-32 2,-26 8,-26 3,-22 5,-16 0,-20 -5,-16 -3,-22 -8,-26 -2,-26" fill="url(#goldLight)" />
+    <polygon points="-24,-24 -22,-20 -18,-20 -21,-17 -20,-13 -24,-16 -28,-13 -27,-17 -30,-20 -26,-20" fill="url(#goldLight)" />
+    <polygon points="24,-24 26,-20 30,-20 27,-17 28,-13 24,-16 20,-13 21,-17 18,-20 22,-20" fill="url(#goldLight)" />
+  </g>
+
+  <!-- Golden Mosque Structure (Dome, Arches, Minarets) -->
+  <g id="mosque" transform="translate(250, 240)">
+    <!-- Main Central Dome -->
+    <path d="M0,-58 Q26,-58 35,-20 L-35,-20 Q-26,-58 0,-58 Z" fill="url(#goldGradient)" stroke="#875806" stroke-width="1.5" />
+    <polygon points="0,-68 2,-62 0,-60 -2,-62" fill="url(#goldLight)" />
+    <!-- Side Mini Domes -->
+    <path d="M-55,-35 Q-40,-35 -35,-15 L-75,-15 Q-70,-35 -55,-35 Z" fill="url(#goldGradient)" stroke="#875806" stroke-width="1.5" />
+    <path d="M55,-35 Q70,-35 75,-15 L35,-15 Q40,-35 55,-35 Z" fill="url(#goldGradient)" stroke="#875806" stroke-width="1.5" />
+    <!-- Mosque Building Walls -->
+    <rect x="-80" y="-15" width="160" height="40" fill="url(#goldGradient)" stroke="#875806" stroke-width="1.5" rx="2" />
+    <!-- Central Gate Arch -->
+    <path d="M-18,25 L-18,0 Q0,-18 18,0 L18,25 Z" fill="#04432f" stroke="url(#goldLight)" stroke-width="2" />
+    <circle cx="0" cy="5" r="5" fill="url(#goldLight)" />
+    <!-- Windows -->
+    <path d="M-55,15 L-55,2 Q-48,-4 -41,2 L-41,15 Z" fill="#04432f" stroke="url(#goldLight)" stroke-width="1" />
+    <path d="M41,15 L41,2 Q48,-4 55,2 L55,15 Z" fill="#04432f" stroke="url(#goldLight)" stroke-width="1" />
+    <!-- Left Minaret -->
+    <rect x="-98" y="-70" width="14" height="95" fill="url(#goldGradient)" stroke="#875806" stroke-width="1.2" />
+    <path d="M-91,-85 L-84,-70 L-98,-70 Z" fill="url(#goldLight)" />
+    <circle cx="-91" cy="-88" r="2.5" fill="url(#goldLight)" />
+    <!-- Minaret Balcony -->
+    <rect x="-102" y="-50" width="22" height="6" fill="url(#goldLight)" rx="1" />
+    <rect x="-102" y="-20" width="22" height="6" fill="url(#goldLight)" rx="1" />
+    <!-- Right Minaret -->
+    <rect x="84" y="-70" width="14" height="95" fill="url(#goldGradient)" stroke="#875806" stroke-width="1.2" />
+    <path d="M91,-85 L98,-70 L84,-70 Z" fill="url(#goldLight)" />
+    <circle cx="91" cy="-88" r="2.5" fill="url(#goldLight)" />
+    <!-- Minaret Balcony -->
+    <rect x="80" y="-50" width="22" height="6" fill="url(#goldLight)" rx="1" />
+    <rect x="80" y="-20" width="22" height="6" fill="url(#goldLight)" rx="1" />
+  </g>
+
+  <!-- Golden Laurel Wreaths (Leaves on Left & Right) -->
+  <g id="wreaths">
+    <!-- Left Wreath -->
+    <path d="M135,340 C110,260 125,180 160,140" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+    <ellipse cx="120" cy="310" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(40, 120, 310)" />
+    <ellipse cx="110" cy="270" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(25, 110, 270)" />
+    <ellipse cx="108" cy="230" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(10, 108, 230)" />
+    <ellipse cx="114" cy="190" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(-5, 114, 190)" />
+    <ellipse cx="130" cy="155" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(-25, 130, 155)" />
+    <ellipse cx="155" cy="135" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(-45, 155, 135)" />
+    <!-- Right Wreath -->
+    <path d="M365,340 C390,260 375,180 340,140" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+    <ellipse cx="380" cy="310" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(-40, 380, 310)" />
+    <ellipse cx="390" cy="270" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(-25, 390, 270)" />
+    <ellipse cx="392" cy="230" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(-10, 392, 230)" />
+    <ellipse cx="386" cy="190" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(5, 386, 190)" />
+    <ellipse cx="370" cy="155" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(25, 370, 155)" />
+    <ellipse cx="345" cy="135" rx="12" ry="6" fill="url(#goldLight)" stroke="#875806" stroke-width="1" transform="rotate(45, 345, 135)" />
+  </g>
+
+  <!-- Open Holy Qur'an on Carved Wooden Rehal -->
+  <g id="quranRehal" transform="translate(250, 310)">
+    <!-- Rehal Base -->
+    <path
+      d="M-60,50 L-30,20 L0,45 L30,20 L60,50 L45,55 L25,32 L0,48 L-25,32 L-45,55 Z"
+      fill="url(#goldGradient)"
+      stroke="#653f02"
+      stroke-width="2"
+    />
+    <path d="M-30,20 L0,32 L30,20 L0,8 Z" fill="#875806" />
+    <!-- Open Quran Pages -->
+    <path
+      d="M-5,5 C-35,3 -65,-5 -80,-25 C-65,-15 -35,-8 -5,-2 Z"
+      fill="#fffde8"
+      stroke="#653f02"
+      stroke-width="1.5"
+    />
+    <path
+      d="M-5,1 C-35,-1 -65,-9 -80,-29 L-5,-5 Z"
+      fill="url(#goldLight)"
+      opacity="0.8"
+    />
+    <line x1="-70" y1="-20" x2="-20" y2="-5" stroke="#926207" stroke-width="1.5" />
+    <line x1="-68" y1="-14" x2="-18" y2="0" stroke="#926207" stroke-width="1.5" />
+    <line x1="-62" y1="-8" x2="-15" y2="5" stroke="#926207" stroke-width="1.5" />
+    <!-- Right Page -->
+    <path
+      d="M5,5 C35,3 65,-5 80,-25 C65,-15 35,-8 5,-2 Z"
+      fill="#fffde8"
+      stroke="#653f02"
+      stroke-width="1.5"
+    />
+    <path
+      d="M5,1 C35,-1 65,-9 80,-29 L5,-5 Z"
+      fill="url(#goldLight)"
+      opacity="0.8"
+    />
+    <line x1="70" y1="-20" x2="20" y2="-5" stroke="#926207" stroke-width="1.5" />
+    <line x1="68" y1="-14" x2="18" y2="0" stroke="#926207" stroke-width="1.5" />
+    <line x1="62" y1="-8" x2="15" y2="5" stroke="#926207" stroke-width="1.5" />
+    <!-- Book Spine -->
+    <line x1="0" y1="-3" x2="0" y2="8" stroke="#452702" stroke-width="3" />
+  </g>
+
+  <!-- Lower Banner Ribbon: CIKOPO PANAWA -->
+  <g id="ribbonBanner" transform="translate(250, 410)">
+    <path d="M-170,-5 L-195,-25 L-170,-45 L-140,-25 Z" fill="#b37b19" stroke="#653f02" stroke-width="2" />
+    <path d="M170,-5 L195,-25 L170,-45 L140,-25 Z" fill="#b37b19" stroke="#653f02" stroke-width="2" />
+    <path
+      d="M-150,-10 C-60,-35 60,-35 150,-10 L140,25 C60,2 60,2 -140,25 Z"
+      fill="url(#goldGradient)"
+      stroke="#653f02"
+      stroke-width="3.5"
+      filter="url(#goldGlow)"
+    />
+    <text
+      x="0"
+      y="12"
+      fill="#022c1e"
+      font-size="26"
+      font-weight="900"
+      letter-spacing="5"
+      font-family="'Plus Jakarta Sans', sans-serif"
+      text-anchor="middle"
+    >
+      CIKOPO PANAWA
+    </text>
+  </g>
+  <!-- Bottom Finial -->
+  <path d="M250,448 L245,465 L250,475 L255,465 Z" fill="url(#goldLight)" />
+</svg>
